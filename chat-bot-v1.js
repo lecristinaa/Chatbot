@@ -1,4 +1,4 @@
-import { palavrasFutebol, palavrasMundialPalmeiras, palavrasRegras, palavrasTimeGosta, comoDarUmaBicicleta, palavrasPapoFurado, mostProbablyQuestion } from './can-i-answer.js'
+import { palavrasFutebol, palavrasMundialPalmeiras, palavrasRegras, palavrasTimeGosta, papoFurado, mostProbablyQuestion } from './can-i-answer.js'
 // O que ele vai poder responder?
 // - O que é futebol?
 // - Quais as regras do futebol?
@@ -7,10 +7,12 @@ import { palavrasFutebol, palavrasMundialPalmeiras, palavrasRegras, palavrasTime
 // - PAPO FURADO?
 
 // Separe a frase em uma array de palavras
-let pergunta = "O que é melhor que futebol ?"
+let pergunta = "Basquete pode ser considerado um esporte ?"
 pergunta = pergunta.toLowerCase()
 pergunta = pergunta.split(' ')
 // Tirar da pergunta o "?"
+pergunta = pergunta.slice(0, 6)
+
 
 const bancos = [
     palavrasFutebol,
